@@ -1,0 +1,211 @@
+@font-face{
+    font-family: 'LatoBlack';
+    src: url(/assets/Lato-Black.ttf) format('truetype');
+  }
+
+@font-face{
+    font-family: 'LatoBold';
+    src: url(/assets/Lato-Bold.ttf) format('truetype');
+  }
+
+@font-face{
+    font-family: 'LatoRegular';
+    src: url(/assets/Lato-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'LatoLight';
+    src: url(/assets/Lato-Light.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'LatoHeavy';
+    src: url(/assets/Lato-Heavy.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'LatoMedium';
+    src: url(/assets/Lato-Medium.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'LatoSemiBold';
+    src: url(/assets/Lato-Semibold.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'LatoThin';
+    src: url(/assets/Lato-Thin.ttf) format('truetype');
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.headerBackground {
+    background: linear-gradient(180deg, #2d303a 93.7%, #323746 6.3%);
+}
+
+.headerWidth {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.headerValues {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo h1{
+    color: white;
+    width: 114px;
+    display: flex;
+    margin-left: 39px;
+    font-family: 'LatoBold';
+    font-size: 25px;
+    font-family: "Lato";
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 32px;
+    margin-bottom: 37px;
+    letter-spacing: -0.02em;
+}
+
+.logo p{
+    color: #f06c64;
+}
+
+.navbar {
+    width: 370px;
+    display: inline-flex;
+}
+
+.navbar ul {
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+    margin-right: 40px;
+    font-size: 12px;
+    line-height: 6px;
+    font-family: "LatoRegular";
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 46px;
+    margin-left: -41px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li+li::before{
+    position: relative;
+    bottom: 1px;
+    left: -9px;
+    content: "\2022";
+    color: #3a3e4d;
+}
+
+.navbar ul li a:hover{
+    color: #f06c64;
+}
+
+.slider {
+    background: linear-gradient(180deg, #ef6c64 99%, #ea676b 1%);
+}
+
+.sliderWidth {
+    margin: 0 auto;
+    width: 1020px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 52px;
+    padding-bottom: 65px;
+}
+
+#leftArrow {
+    width: 27px;
+    height: 27px;
+    padding-left: 1px;
+}
+
+#leftArrow:hover{
+    opacity: .5;
+}
+
+
+#verticalImage {
+    width: 240px;
+    height: 483px;
+    margin-left: -22px;
+}
+
+#horizontalImage {
+    width: 483px;
+    height: 240px;
+    margin-right: -21px;
+}
+
+#rightArrow {
+    width: 27px;
+    height: 27px;
+}
+
+#rightArrow:hover{
+    opacity: .5;
+}
+
+.services {
+    background: linear-gradient(180deg, #f2f2f2 98.5%, #ffffff 1.5%);
+}
+
+.servicesWidth {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.servicesHeader {
+    font-family: "LatoHeavy";
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    text-align: left;
+    padding: 68px 0 2px 41px;
+    letter-spacing: -0.09px;
+}
+
+.servicesDescription {
+    width: 936px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "LatoLight";
+    padding: 27px 0px 45px 0px;
+    text-align: justify;
+    letter-spacing: -0.24px;
+}
+
+.flexContainer {
+    display: flex;
+    margin: 0 auto;
+    width: 936px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+    
+.flexContainer div{
+    flex-wrap: wrap;
+    border: 1px solid rebeccapurple;
+    flex-basis: 30%;
+}
+
+
+
