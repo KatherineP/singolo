@@ -48,7 +48,6 @@ h1 {
     line-height: 18px;
     font-family: "LatoBlack", sans-serif;
     color: #666d89;
-
 }
 
 h2 {
@@ -95,10 +94,6 @@ p {
     border-color: #dedede;
 }
 
-
-
-
-
 .tag {
     border-radius: 5px;
     border: 1px solid #666d89;
@@ -107,12 +102,6 @@ p {
 }
 
 .layout-4-column {
-    /* margin-top: 9px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 940px;
-    height: 601px;
-    justify-content: space-between; */
     display: grid;
     grid: repeat(3, 187px) / repeat(4, 220px);
     gap: 20px;
@@ -125,7 +114,6 @@ p {
 .employee__description {
     font-size: 12px;
 }
-
 
 .about__content {
     padding-top: 67px;
@@ -140,9 +128,6 @@ p {
 }
 
 .layout-3-column {
-    /* display: flex;
-    padding-top: 22px;
-    width: 940px; */
     display: grid;
     grid-template-columns: 300px 300px 300px;
     gap: 20px;
@@ -155,10 +140,11 @@ p {
 }
 
 .employee__description {
-    margin: 10px 0 21px 0;
+    margin: 9px 0 21px 0;
     line-height: 22px;
     text-align: justify;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.3px;
+    font-family: "LatoRegular", sans-serif;
 }
 
 .fb {
