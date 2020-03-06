@@ -24,27 +24,21 @@
 } 
 
 .wrapper {
-    margin: 0 auto;
-    width: 100%;
+    max-width: 1020px;
+    margin: auto;
 }
-
-                                                   /* header */
-.headerBackground {
+                                                     /* header */
+.header {
     background: linear-gradient(180deg, #2d303a 93.7%, #323746 6.3%);
 }
 
-.headerWidth {
-    margin: 0 auto;
-    width: 1020px;
-}
-
-.headerValues {
+.header-elements {
     display: flex;
     justify-content: space-between;
 
 }
 
-.logo h1 {
+.singolo-logo {
     color: white;
     width: 114px;
     display: flex;
@@ -59,13 +53,8 @@
     letter-spacing: -0.02em;
 }
 
-.logo p {
+.logo-asterisk {
     color: #f06c64;
-}
-
-.navbar {
-    width: 370px;
-    display: inline-flex;
 }
 
 .navbar ul {
@@ -79,7 +68,6 @@
     text-align: left;
     text-transform: uppercase;
     margin-top: 46px;
-    margin-left: -41px;
 }
 
 .navbar ul li a{
@@ -105,16 +93,14 @@
     background: linear-gradient(180deg, #ef6c64 99%, #ea676b 1%);
 }
 
-.sliderWidth {
-    margin: 0 auto;
-    width: 1020px;
+.slider-layout {
     justify-content: space-around;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     padding-top: 52px;
-    padding-bottom: 65px;
+    padding-bottom: 62px;
 }
 
 #leftArrow {
@@ -152,160 +138,64 @@
 
 .services {
     background: linear-gradient(180deg, #f2f2f2 98.5%, #ffffff 1.5%);
+    padding-bottom: 28px;
 }
 
-.servicesWidth {
-    margin: 0 auto;
-    width: 1020px;
-    padding-bottom: 33px;
-}
-
-.servicesHeader {
+.services-title{
     font-family: "LatoHeavy";
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    text-align: left;
-    padding: 68px 0 2px 41px;
+    padding: 69px 0 2px 41px;
     letter-spacing: -0.09px;
 }
 
-.servicesDescription {
+.services-description {
     width: 936px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     font-family: "LatoLight";
-    padding: 27px 0px 45px 0px;
+    padding: 23px 0px 47px 41px;
     text-align: justify;
     letter-spacing: -0.24px;
 }
 
-.flexContainer {
-    display: flex;
-    margin: 0 auto;
-    width: 936px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    justify-content: space-between;
+.services-3-column-layout {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 20px;
+    margin-bottom: 47px;
+    margin-left: 40px;
 }
 
-.flexContainer div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 30%;
-    margin-bottom: 17px;
-}
-
-.flexContainer p {
+.box-design-text p {
     color: #767e9e;
     font-family: "LatoRegular";
     font-size: 12px;
     line-height: 22px;
     padding-top: 10px;
-    padding-left: 17px;
     margin-right: 17px;
     text-align: justify;
     letter-spacing: -0.09px;
 }
 
-.flexContainer h3 {
+.box-design-text h3 {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
     font-family: "LatoHeavy";
-    margin-top: -4px;
-    padding-left: 16px;
+    margin-top: -1px;
 }
 
-.image {
-    margin-right: -26px;
-    margin-top: -2px;
+.box-design, .box-layout, .box-ideas, .box-support, .box-love, .box-star {
+    display: grid;
+    grid-template-columns: 60px 237px;
+    gap: 20px;
 }
 
-.boxDesign img {
-    margin-left: -3px;
-}
-
-.boxIdeas img {
-    margin-left: -11px;
-}
-
-.boxIdeas h3 {
-    padding-left: 11px;
-}
-
-.boxIdeas p {
-    padding-left: 11px;
-}
-
-.boxLove img {
-    margin-left: -17px;
-}
-
-.boxLove h3 {
-    padding-left: 4px;
-}
-
-.boxLove p {
-    padding-left: 4px;
-}
-
-.boxSupport h3 {
-    padding-left: 9px;
-}
-
-.boxSupport p {
-    padding-left: 10px;
-}
-
-.boxStar h3 {
-    padding-left: 2px;
-}
-
-.boxStar p {
-    padding-left: 4px;
-    padding-bottom: 22px;
-}
-
-.boxLayout img {
-    margin-left: -3px;
-}
-
-.boxSupport img {
-    margin-left: -12px;
-}
-
-.boxStar img {
-    margin-left: -17px;
-}
-
-.boxDesignText {
-    flex: 2;
-    margin-right: -34px;
-}
-
-.boxIdeasText {
-    flex: 2;
-    margin-right: -34px;
-}
-
-.boxLoveText {
-    flex: 2;
-    margin-right: -34px;
-}
-
-.boxLayoutText {
-    flex: 2;
-    margin-right: -34px;
-}
-
-.boxSupportText {
-    flex: 2;
-    margin-right: -34px;
-}
-
-.boxStarText {
-    flex: 2;
-    margin-right: -34px;
+.first-column, .second-column, .third-column{
+    display: grid;
+    grid-template-rows: 85px 85px;
+    gap: 38px;
 }

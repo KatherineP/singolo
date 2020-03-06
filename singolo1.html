@@ -9,16 +9,15 @@
     <link rel="stylesheet" href="singolo1.css">
 </head>
 <body>
-    <div class="wrapper">
-
-    <header>
-        <div class="headerBackground">
-        <div class="headerWidth">
-            <div class="headerValues">
+    
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-elements">
             <div class="logo">
-                <h1>singolo<p>*</p></h1>
+                <h1 class="singolo-logo">singolo<span class="logo-asterisk">*</span></h1>
             </div>
-                <nav class="navbar"> 
+            <div class="navbar">
+                <nav> 
                     <ul>
                         <li>
                             <a href="#">home</a>
@@ -38,47 +37,62 @@
                     </ul>
                 </nav>
             </div>
-        </div>
+            </div>
+
         </div>
     </header>
 
         <div class="slider">
-            <div class="sliderWidth">
-                <a href="#"><img id="leftArrow" src="/images/chev (3).svg" width="25px" height="25px" alt="left arrow"></a>
-                <img id="verticalImage" src="/images/iPhone Vertical.png" width="212px" height="454px" alt="iPhone Vertical">
-                <img id="horizontalImage" src="/images/iPhone Horizontal.png" width="458px" height="209px" alt="iPhone Horizontal">
-                <a href="#"><img id="rightArrow" src="/images/chev (4).svg" width="25px" height="25px" alt="right arrow"></a>
+            <div class="wrapper">
+                <div class="slider-layout">
+                    <div><a href="#"><img id="leftArrow" src="./assets/leftArrow.svg" width="25" height="25" alt="left arrow"></a></div>
+                    <div><img id="verticalImage" src="./assets/iPhoneVertical.png" width="212" height="454" alt="iPhone Vertical"></div>
+                    <div><img id="horizontalImage" src="./assets/iPhoneHorizontal.png" width="458" height="209" alt="iPhone Horizontal"></div>
+                    <div><a href="#"><img id="rightArrow" src="./assets/rightArrow.svg" width="25" height="25" alt="right arrow"></a></div>
+                </div>
             </div>
         </div>
 
         <div class="services">
-            <div class="servicesWidth">
-                    <div class="servicesHeader">
-                        <h2>Our Services</h2>
-                        <div class="servicesDescription">
+            <div class="wrapper">
+                <div class="services-header">
+                    <h2 class="services-title">Our Services</h2>
+                        <p class="services-description">
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
+                            luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+                            commodo, tortor mauris condimentum nibh.
+                        </p>
+                </div>
+
+
+            <div class="services-3-column-layout">
+                <div class="first-column">
+                    <div class="box-design">
+                        <div class="services-image"><img src="./assets/pen.svg" alt="Custom Design" width="60" height="60"></div>
+                        <div class="box-design-text">
+                            <h3>Custom Design</h3>
                             <p>
-                                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo
-                                luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
-                                commodo, tortor mauris condimentum nibh.
+                                Curabitur vestibulum eget mauris quis laoreet.
+                                Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
                             </p>
                         </div>
                     </div>
-    
-            <div class="flexContainer">
-                <div class="boxDesign">
-                    <div class="image"><img src="/images/pen.svg" alt="Custom Design" width="60" height="60"></div>
-                    <div class="boxDesignText">
-                        <h3>Custom Design</h3>
-                        <p>
-                            Curabitur vestibulum eget mauris quis laoreet.
-                            Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
-                        </p>
+                    <div class="box-layout">
+                        <div class="services-image"><img src="./assets/phone.svg" alt="Responsive Layout" width="60" height="60"></div>
+                        <div class="box-design-text">
+                            <h3>Responsive Layout</h3>
+                            <p>
+                                Sed porttitor placerat rhoncus. In at nunc tellus.
+                                Maecenas blandit nunc ligula. Praesent elit leo.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="boxIdeas">
-                    <div class="image"><img src="/images/lightbulb.svg" alt="Innovative Ideas" width="60" height="60"></div>
-                    <div class="boxIdeasText">
+            <div class="second-column">
+                <div class="box-ideas">
+                    <div class="services-image"><img src="./assets/lightbulb.svg" alt="Innovative Ideas" width="60" height="60"></div>
+                    <div class="box-design-text">
                         <h3>Innovative Ideas</h3>
                         <p>
                             Quisque luctus, quam eget molestie commodo, lacus purus cursus
@@ -86,29 +100,9 @@
                         </p>
                     </div>
                 </div>
-                <div class="boxLove">
-                    <div class="image"><img src="/images/heart.svg" alt="Love Is The Answer" width="60" height="60"></div>
-                    <div class="boxLoveText">
-                        <h3>Love Is The Answer</h3>
-                        <p>
-                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
-                            et consequat felis. Quisque condimentum.
-                        </p>
-                    </div>
-                </div>
-                <div class="boxLayout">
-                    <div class="image"><img src="/images/phone.svg" alt="Responsive Layout" width="60" height="60"></div>
-                    <div class="boxLayoutText">
-                        <h3>Responsive Layout</h3>
-                        <p>
-                            Sed porttitor placerat rhoncus. In at nunc tellus.
-                            Maecenas blandit nunc ligula. Praesent elit leo.
-                        </p>
-                    </div>
-                </div>
-                <div class="boxSupport">
-                    <div class="image"><img src="/images/bubble.svg" alt="24/7 Support" width="60" height="60"></div>
-                    <div class="boxSupportText">
+                <div class="box-support">
+                    <div class="services-image"><img src="./assets/bubble.svg" alt="24/7 Support" width="60" height="60"></div>
+                    <div class="box-design-text">
                         <h3>24/7 Support</h3>
                         <p>
                             Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem
@@ -116,9 +110,21 @@
                         </p>
                     </div>
                 </div>
-                <div class="boxStar">
-                    <div class="image"><img src="/images/star.svg" alt="Feel Like A Start" width="60" height="60"></div>
-                    <div class="boxStarText">
+            </div>
+            <div class="third-column">
+                <div class="box-love">
+                    <div class="services-image"><img src="./assets/heart.svg" alt="Love Is The Answer" width="60" height="60"></div>
+                    <div class="box-design-text">
+                        <h3>Love Is The Answer</h3>
+                        <p>
+                            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis,
+                            et consequat felis. Quisque condimentum.
+                        </p>
+                    </div>
+                </div>
+                <div class="box-star">
+                    <div class="services-image"><img src="./assets/star.svg" alt="Feel Like A Start" width="60" height="60"></div>
+                    <div class="box-design-text">
                         <h3>Feel Like A Star</h3>
                         <p>
                             Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae
@@ -126,9 +132,9 @@
                         </p>
                     </div>
                 </div>
-              </div>
             </div>
-        </div>
+            </div>
+            </div>
         </div>
 </body>
 </html>
