@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'LatoBlack';
-    src: url(/assets/Lato-Black.ttf) format('truetype');
+    src: url(./assets/Lato-Black.ttf) format('truetype');
   }
 
 @font-face {
     font-family: 'LatoBold';
-    src: url(/assets/Lato-Bold.ttf) format('truetype');
+    src: url(./assets/Lato-Bold.ttf) format('truetype');
   }
 
 @font-face {
     font-family: 'LatoRegular';
-    src: url(/assets/Lato-Regular.ttf) format('truetype');
+    src: url(./assets/Lato-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LatoLight';
-    src: url(/assets/Lato-Light.ttf) format('truetype');
+    src: url(./assets/Lato-Light.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'LatoHeavy';
-    src: url(/assets/Lato-Heavy.ttf) format('truetype');
+    src: url(./assets/Lato-Heavy.ttf) format('truetype');
 } 
 
 .wrapper {
@@ -45,14 +45,11 @@
     color: white;
     width: 114px;
     display: flex;
-    margin-left: 39px;
-    font-family: 'LatoBold';
+    font-family: 'LatoBold', Verdana, sans-serif;
     font-size: 25px;
-    font-family: "Lato";
     text-align: left;
     text-transform: uppercase;
-    margin-top: 33px;
-    margin-bottom: 37px;
+    margin: 35px 0 36px 40px;
     letter-spacing: -0.02em;
 }
 
@@ -64,10 +61,10 @@
     display: flex;
     width: 370px;
     justify-content: space-between;
-    margin-right: 40px;
+    margin-right: 39px;
     font-size: 12px;
     line-height: 6px;
-    font-family: "LatoRegular";
+    font-family: "LatoRegular", Verdana, sans-serif;
     text-align: left;
     text-transform: uppercase;
     margin-top: 46px;
@@ -123,7 +120,7 @@
 #horizontalImage {
     width: 483px;
     height: 240px;
-    margin-right: -21px;
+    margin-right: -24px;
 }
 
 #rightArrow {
@@ -141,7 +138,7 @@
 }
 
 .services-title{
-    font-family: "LatoHeavy";
+    font-family: "LatoHeavy", Verdana, sans-serif;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -154,7 +151,7 @@
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    font-family: "LatoLight";
+    font-family: "LatoLight", Verdana, sans-serif;
     padding: 23px 0px 47px 41px;
     text-align: justify;
     letter-spacing: -0.24px;
@@ -170,7 +167,7 @@
 
 .box-design-text p {
     color: #767e9e;
-    font-family: "LatoRegular";
+    font-family: "LatoRegular", Verdana, sans-serif;
     font-size: 12px;
     line-height: 22px;
     padding-top: 10px;
@@ -183,7 +180,7 @@
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
-    font-family: "LatoHeavy";
+    font-family: "LatoHeavy", Verdana, sans-serif;
     margin-top: -1px;
 }
 
@@ -213,7 +210,7 @@
 h1 {
     font-size: 30px;
     line-height: 18px;
-    font-family: "LatoBlack", sans-serif;
+    font-family: "LatoBlack", Verdana, sans-serif;
     color: #666d89;
 }
 
@@ -221,13 +218,13 @@ h2 {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
-    font-family: "LatoBold", sans-serif;
+    font-family: "LatoBold", Verdana, sans-serif;
 }
 
 p {
     font-size: 18px;
     line-height: 30px;
-    font-family: "LatoLight", sans-serif;
+    font-family: "LatoLight", Verdana, sans-serif;
     color: #767e9e;
 }
 
@@ -250,7 +247,7 @@ p {
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
-    font-family: "LatoRegular", sans-serif;
+    font-family: "LatoRegular", Verdana, sans-serif;
     padding-top: 7px;
     padding-bottom: 10px;
     cursor: pointer;
@@ -310,7 +307,7 @@ p {
     line-height: 22px;
     text-align: justify;
     letter-spacing: -0.3px;
-    font-family: "LatoRegular", sans-serif;
+    font-family: "LatoRegular", Verdana, sans-serif;
 }
 
 .fb {
@@ -375,7 +372,7 @@ p {
 .h1-Get-a-quote {
     font-size: 30px;
     line-height: 18px;
-    font-family: "LatoBlack", sans-serif;
+    font-family: "LatoBlack", Verdana, sans-serif;
     color: #f0d8d9;
     padding-top: 63px;
     padding-bottom: 30px;
@@ -388,7 +385,7 @@ p {
     font-size: 18px;
     line-height: 30px;
     color: #f0d8d9;
-    font-family: "LatoLight", sans-serif;
+    font-family: "LatoLight", Verdana, sans-serif;
     margin-top: -2px;
     text-align: justify;
     letter-spacing: -0.25px;
@@ -443,7 +440,7 @@ p {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
-    font-family: "LatoRegular";
+    font-family: "LatoRegular", Verdana, sans-serif;
     cursor: pointer;
 }
 
@@ -451,26 +448,26 @@ input::-webkit-input-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
-    font-family: "LatoRegular";
+    font-family: "LatoRegular", Verdana, sans-serif;
    } 
 input::-moz-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
-    font-family: "LatoRegular";
+    font-family: "LatoRegular", Verdana, sans-serif;
    }
 
 textarea::-webkit-input-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
-    font-family: "LatoRegular";
+    font-family: "LatoRegular", Verdana, sans-serif;
    } 
 textarea::-moz-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f48c8f;
-    font-family: "LatoRegular";
+    font-family: "LatoRegular", Verdana, sans-serif;
    }
 
 .contact-information {
@@ -481,7 +478,7 @@ textarea::-moz-placeholder {
     font-size: 18px;
     line-height: 18px;
     color: #f0d8d9;
-    font-family: "LatoBold", sans-serif;
+    font-family: "LatoBold", Verdana, sans-serif;
     margin-bottom: 12px;
     text-align: justify;
    }
@@ -491,7 +488,7 @@ textarea::-moz-placeholder {
     height: 107px;
     font-size: 12px;
     line-height: 21px;
-    font-family: "LatoRegular", sans-serif;
+    font-family: "LatoRegular", Verdana, sans-serif;
     text-align: justify;
     letter-spacing: -0.15px;
     color: #f0d8d9;
@@ -504,7 +501,7 @@ textarea::-moz-placeholder {
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
-    font-family: "LatoRegular", sans-serif;
+    font-family: "LatoRegular", Verdana, sans-serif;
     padding-left: 5px;
 }
 
@@ -513,7 +510,7 @@ textarea::-moz-placeholder {
 }
 
 .copyright {
-    font-family: "LatoRegular", sans-serif;
+    font-family: "LatoRegular", Verdana, sans-serif;
     color: #575d74;
     font-size: 12px;
     line-height: 22px;
