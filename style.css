@@ -33,12 +33,14 @@
 .header {
     background: linear-gradient(180deg, #2d303a 93.7%, #323746 6.3%);
     padding-bottom: 6px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 .header-elements {
     display: flex;
     justify-content: space-between;
-
 }
 
 .singolo-logo {
@@ -70,12 +72,12 @@
     margin-top: 46px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     color: white;
     text-decoration: none;
 }
 
-.navbar ul li+li::before{
+.navbar ul li+li::before {
     position: relative;
     bottom: 1px;
     left: -9px;
@@ -83,7 +85,11 @@
     color: #3a3e4d;
 }
 
-.navbar ul li a:hover{
+.navbar ul li a.active {
+    color: #f06c64;
+}
+
+.navbar ul li a:not(.active):hover {
     color: #f06c64;
 }
 
@@ -243,6 +249,10 @@ p {
     letter-spacing: -0.35px;
 }
 
+#portfolio-tags .tag_selected {
+    color: #dedede;
+    border-color: #dedede;
+} 
 .portfolio__tags {
     font-size: 12px;
     line-height: 22px;
@@ -251,6 +261,10 @@ p {
     padding-top: 7px;
     padding-bottom: 10px;
     cursor: pointer;
+}
+
+#portfolio-images .image-hidden {
+    display: none;
 }
 
 .tag:hover {
@@ -273,6 +287,11 @@ p {
     overflow: hidden;
     margin-top: 9px;
     margin-bottom: 20px;
+}
+
+img.active-portfolio-image {
+    position: absolute;
+    border: 5px solid  #F06C64;
 }
 
 .about__content {
@@ -399,6 +418,8 @@ p {
     margin-top: 21px;
     padding-bottom: 18px;
     margin-left: 42px;
+
+    position: relative;
 }
 
 .layout-4-rows {
@@ -430,7 +451,7 @@ p {
     padding-top: 6px;
 }
 
-.submit-button {
+.submit-button, #close-btn {
     width: 150px;
     height: 36px;
     border: 1px solid #97423d;
@@ -469,6 +490,37 @@ textarea::-moz-placeholder {
     color: #f48c8f;
     font-family: "LatoRegular", Verdana, sans-serif;
    }
+
+
+#message-block {
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(230, 170, 164);
+}
+
+#message-block.hidden {
+    display: none;
+}
+
+#message {
+    position: absolute;
+    top: 32%;
+    left: 33%;
+    border: 1px solid #97423d;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ef6c64 ;
+    font-size: 12px;
+    line-height: 22px;
+    font-family: "LatoRegular", Verdana, sans-serif;
+    min-width: 507px;
+    max-width: 510px;
+    padding: 10px 10px;
+}
 
 .contact-information {
     margin-top: 24px;

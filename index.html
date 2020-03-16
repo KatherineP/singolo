@@ -18,21 +18,21 @@
             </div>
             <div class="navbar">
                 <nav> 
-                    <ul>
+                    <ul id="menu">
                         <li>
-                            <a href="#">home</a>
+                            <a href="#home" class="active">home</a>
                         </li>
                         <li>
-                            <a href="#">services</a>
+                            <a href="#our-services">services</a>
                         </li>
                         <li>
-                            <a href="#">portfolio</a>
+                            <a href="#portfolio">portfolio</a>
                         </li>
                         <li>
-                            <a href="#">about</a>
+                            <a href="#about-us">about</a>
                         </li>
                         <li>
-                            <a href="#">contact</a>
+                            <a href="#contact">contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -42,7 +42,7 @@
         </div>
     </header>
 
-        <div class="slider">
+        <div class="slider" id="home">
             <div class="wrapper">
                 <div class="slider-layout">
                     <div><a href="#"><img id="leftArrow" src="./assets/leftArrow.svg" width="25" height="25" alt="left arrow"></a></div>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="services">
+        <div class="services" id="our-services">
             <div class="wrapper">
                 <div class="services-header">
                     <h2 class="services-title">Our Services</h2>
@@ -137,35 +137,35 @@
             </div>
         </div>
         <!-- SINGOLO-2 -->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrapper portfolio__wrapper">
                 <div class="portfolio__content">
                     <h1 class="portfolio__title">Portfolio</h1>
                     <p class="portfolio__description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                    <div class="portfolio__tags">
-                        <span class="tag tag_selected">All</span>
-                        <span class="tag tag_bordered">Web Design</span>
-                        <span class="tag tag_bordered">Graphic Design</span>
-                        <span class="tag tag_bordered">Artwork</span>
+                    <div class="portfolio__tags" id="portfolio-tags">
+                        <span class="tag tag_selected all">All</span>
+                        <span class="tag web-design">Web Design</span>
+                        <span class="tag graphic-design">Graphic Design</span>
+                        <span class="tag artwork">Artwork</span>
                     </div>
-                    <div class="layout-4-column">
-                        <div><img class="strategy__image" src="./assets/1.png" width="220" height="187" alt="Image 1"></div>
-                        <div><img class="strategy__image" src="./assets/2.png" width="220" height="187" alt="Image 2"></div>
-                        <div><img class="strategy__image" src="./assets/3.png" width="220" height="187" alt="Image 3"></div>
-                        <div><img class="strategy__image" src="./assets/4.png" width="220" height="187" alt="Image 4"></div>
-                        <div><img class="strategy__image" src="./assets/5.png" width="220" height="187" alt="Image 5"></div>
-                        <div><img class="strategy__image" src="./assets/6.png" width="220" height="187" alt="Image 6"></div>
-                        <div><img class="strategy__image" src="./assets/7.png" width="220" height="187" alt="Image 7"></div>
-                        <div><img class="strategy__image" src="./assets/8.png" width="220" height="187" alt="Image 8"></div>
-                        <div><img class="strategy__image" src="./assets/9.png" width="220" height="187" alt="Image 9"></div>
-                        <div><img class="strategy__image" src="./assets/10.png" width="220" height="187" alt="Image 10"></div>
-                        <div><img class="strategy__image" src="./assets/11.png" width="220" height="187" alt="Image 11"></div>
-                        <div><img class="strategy__image" src="./assets/12.png" width="220" height="187" alt="Image 12"></div>
+                    <div class="layout-4-column" id="portfolio-images">
+                        <div class="web-design"><img class="portfolio__image" src="./assets/1.png" width="220" height="187" alt="Image 1"></div>
+                        <div class="web-design"><img class="portfolio__image" src="./assets/2.png" width="220" height="187" alt="Image 2"></div>
+                        <div class="graphic-design"><img class="portfolio__image" src="./assets/3.png" width="220" height="187" alt="Image 3"></div>
+                        <div class="web-design"><img class="portfolio__image" src="./assets/4.png" width="220" height="187" alt="Image 4"></div>
+                        <div class="graphic-design"><img class="portfolio__image" src="./assets/5.png" width="220" height="187" alt="Image 5"></div>
+                        <div class="artwork"><img class="portfolio__image" src="./assets/6.png" width="220" height="187" alt="Image 6"></div>
+                        <div class="web-design"><img class="portfolio__image" src="./assets/7.png" width="220" height="187" alt="Image 7"></div>
+                        <div class="graphic-design"><img class="portfolio__image" src="./assets/8.png" width="220" height="187" alt="Image 8"></div>
+                        <div class="web-design"><img class="portfolio__image" src="./assets/9.png" width="220" height="187" alt="Image 9"></div>
+                        <div class="artwork"><img class="portfolio__image" src="./assets/10.png" width="220" height="187" alt="Image 10"></div>
+                        <div class="web-design"><img class="portfolio__image" src="./assets/11.png" width="220" height="187" alt="Image 11"></div>
+                        <div class="artwork"><img class="portfolio__image" src="./assets/12.png" width="220" height="187" alt="Image 12"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="wrapper about__wrapper">
                 <div class="about__content">
                     <h1 class="about__title">About Us</h1>
@@ -210,7 +210,7 @@
         </section> 
 
         <!-- SINGOLO-3 -->
-        <section class="form">
+        <section class="form" id="contact">
             <div class="wrapper">
                 <div class="form-text">
                 <h1 class="h1-Get-a-quote">Get a Quote</h1>
@@ -220,12 +220,24 @@
                 </div>
                 <div class="layout-2-column">
                     <div class="form-with-inputs">
-                        <form class="layout-4-rows" action="https://www.w3schools.com/action_page.php" method="POST">
-                            <div><input class="input-fields" name="name" type="text" placeholder="Name (Required)" required></div>
-                            <div><input class="input-fields" name="email" type="email" placeholder="Email (Required)" required></div>
-                            <div><input class="input-fields" name="subject" type="text" placeholder="Subject"></div>
-                            <div><textarea class="textarea" name="comment" placeholder="Describe your project in detail..."></textarea></div>
-                            <div><button class="submit-button">Submit</button></div>
+                        <!-- <form class="layout-4-rows" action="https://www.w3schools.com/action_page.php" method="POST"> -->
+                            <form id="form" class="layout-4-rows">
+                                <div><input class="input-fields" id="name" name="name" type="text" placeholder="Name (Required)" required></div>
+                                <div><input class="input-fields" id="email" name="email" type="email" placeholder="Email (Required)" required></div>
+                                <div><input class="input-fields" name="subject" id="subject" type="text" placeholder="Subject"></div>
+                                <div><textarea class="textarea" name="comment" id="describe" placeholder="Describe your project in detail..."></textarea></div>
+                                <div><button class="submit-button" id="btn">Submit</button></div>
+                                <div id="message-block" class="hidden">
+                                    <div id="message">
+                                        <p>Письмо отправлено</p>
+                                        <br>
+                                        <p><span id="subject-result"></span></p>
+                                        <br>
+                                        <p><span id="describe-result"></span></p>
+                                        <br>
+                                        <button id="close-btn">OK</button>
+                                    </div>
+                                </div>
                         </form>
                     </div>
                     <div class="contact-information">
@@ -262,5 +274,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>
