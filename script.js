@@ -4,9 +4,7 @@ const CLOSE_BUTTON = document.getElementById('close-btn');
 const FORM = document.getElementById('form');
 const PORTFOLIO_IMAGES = document.getElementById('portfolio-images');
 const PORTFOLIO_TAGS = document.getElementById('portfolio-tags');
-const VERTICAL_PHONE = document.getElementById('verticalImage');
-const VERTICAL_PHONE_BLACK = document.getElementById('iphone-vertical-black');
-const HORIZONTAL_PHONE = document.getElementById('horizontalImage');
+const CLICKABLE_PHONES = document.querySelectorAll('.clickable-phone');
 let slider = document.getElementById('home');
 let portfolioImages = PORTFOLIO_IMAGES.querySelectorAll('img');
 let portfolioImagesPosition = PORTFOLIO_IMAGES.querySelectorAll('div');
@@ -77,16 +75,12 @@ let hiddenValue = VERTICAL_PHONE_BLACK.hidden;
     console.log(hiddenValue);
 
 //PHONES
-VERTICAL_PHONE.addEventListener('click', (event) => {
-    let hiddenValue = VERTICAL_PHONE_BLACK.hidden;
-
-    if(hiddenValue === true && event.target.contains('verticalImage') === true){
-
-        VERTICAL_PHONE_BLACK.setAttribute('hidden', 'true');
-    } else if (hiddenValue === false && event.target.contains('verticalImage') === true){
-        event.target.setAttribute('hidden', 'false');
-    }
-});
+CLICKABLE_PHONES.forEach(phone => {
+    phone.addEventListener('click', event => {
+      const screen = phone.parent.querySelector('.black-screen');
+      screen.hidden = !screen.hidden;
+    })
+  });
 
 //HEADER MENU
 MENU.addEventListener('click', (event) => {
