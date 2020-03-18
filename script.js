@@ -4,8 +4,89 @@ const CLOSE_BUTTON = document.getElementById('close-btn');
 const FORM = document.getElementById('form');
 const PORTFOLIO_IMAGES = document.getElementById('portfolio-images');
 const PORTFOLIO_TAGS = document.getElementById('portfolio-tags');
+const VERTICAL_PHONE = document.getElementById('verticalImage');
+const VERTICAL_PHONE_BLACK = document.getElementById('iphone-vertical-black');
+const HORIZONTAL_PHONE = document.getElementById('horizontalImage');
+let slider = document.getElementById('home');
 let portfolioImages = PORTFOLIO_IMAGES.querySelectorAll('img');
 let portfolioImagesPosition = PORTFOLIO_IMAGES.querySelectorAll('div');
+
+
+//SLIDER
+
+let items = document.querySelectorAll('.slider .item');
+let currentItem = 0;
+let isEnabled = true;
+
+function changeCurrentItem(n) {
+	currentItem = (n + items.length) % items.length;
+}
+
+function hideItem(direction) {
+	isEnabled = false;
+	items[currentItem].classList.add(direction);
+	items[currentItem].addEventListener('animationend', function() {
+        this.classList.remove('active-item', direction);
+	});
+}
+
+function showItem(direction) {
+	items[currentItem].classList.add('next', direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+        this.classList.add('active-item');
+        
+        
+		isEnabled = true;
+	});
+}
+
+function nextItem(n) {
+	hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
+}
+
+function previousItem(n) {
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left');
+}
+
+document.querySelector('.control.left').addEventListener('click', function() {
+	if (isEnabled) {
+		previousItem(currentItem);
+    }
+    if (slider.classList.contains('slider2')) {
+        slider.classList.remove('slider2');
+    }
+    else { slider.classList.add('slider2'); }
+});
+
+document.querySelector('.control.right').addEventListener('click', function() {
+	if (isEnabled) {
+		nextItem(currentItem);
+    }
+
+    if (slider.classList.contains('slider2')) {
+        slider.classList.remove('slider2');
+    }
+    else { slider.classList.add('slider2'); }
+});
+let hiddenValue = VERTICAL_PHONE_BLACK.hidden;
+    console.log(hiddenValue);
+
+//PHONES
+VERTICAL_PHONE.addEventListener('click', (event) => {
+    let hiddenValue = VERTICAL_PHONE_BLACK.hidden;
+
+    if(hiddenValue === true && event.target.contains('verticalImage') === true){
+
+        VERTICAL_PHONE_BLACK.setAttribute('hidden', 'true');
+    } else if (hiddenValue === false && event.target.contains('verticalImage') === true){
+        event.target.setAttribute('hidden', 'false');
+    }
+});
 
 //HEADER MENU
 MENU.addEventListener('click', (event) => {
@@ -50,17 +131,7 @@ PORTFOLIO_TAGS.addEventListener('click', (event) => {
         portfolioImagesPosition.forEach(el => el.classList.remove('image-hidden'));
     }
 
-
-
 });
-
-
-
-
-
-
-
-
 
 //CONTACT FORM
 FORM.addEventListener('submit', (event) => {

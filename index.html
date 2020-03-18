@@ -42,16 +42,39 @@
         </div>
     </header>
 
+
         <div class="slider" id="home">
-            <div class="wrapper">
-                <div class="slider-layout">
-                    <div><a href="#"><img id="leftArrow" src="./assets/leftArrow.svg" width="25" height="25" alt="left arrow"></a></div>
-                    <div><img id="verticalImage" src="./assets/iPhoneVertical.png" width="212" height="454" alt="iPhone Vertical"></div>
-                    <div><img id="horizontalImage" src="./assets/iPhoneHorizontal.png" width="458" height="209" alt="iPhone Horizontal"></div>
-                    <div><a href="#"><img id="rightArrow" src="./assets/rightArrow.svg" width="25" height="25" alt="right arrow"></a></div>
-                </div>
+            <div class="wrapper item-container">
+                <div class="item active-item">
+                    <div class="slider-description">
+                        <div class="vertical">
+                            <img id="verticalImage" src="./assets/iPhoneVertical.png" width="212" height="454" alt="iPhone Vertical">
+                            <div id="iphone-vertical-black" hidden="true"></div>
+                            <!-- <img id="vertical-background" src="./assetsSlider/background-vertical.png" alt="iPhone Vertical"> -->
+                            <!-- <img id="vertical-button" src="./assetsSlider/Circle.png" alt="iPhone Vertical"> -->
+                        </div>
+                        <div class="horizontal">
+                            <img id="horizontalImage" src="./assets/iPhoneHorizontal.png" width="458" height="209" alt="iPhone Horizontal">
+                            <div id="iphone-horizontal-black" hidden="true"></div>
+                            <!-- <img id="horizontal-background" src="./assetsSlider/background-horizontal.png" alt="iPhone Horizontal">
+                            <img id="horizontal-button" src="./assetsSlider/Circle.png" alt="iPhone Horizontal"> -->
+                        </div>
+                    </div>
+                </div>   
+                <div class="item">
+                    <div class="slider-description">
+                        <img id="second-slider" src="./assets/Slider.svg" alt="second slider">
+                    </div>
+                </div>  
+            </div>
+            <div class="control left">
+                <img class="arrow left" id="leftArrow" src="./assets/leftArrow.svg" width="25" height="25" alt="left arrow">
+            </div>
+            <div class="control right">
+                <img class="arrow right" id="rightArrow" src="./assets/rightArrow.svg" width="25" height="25" alt="right arrow">
             </div>
         </div>
+
 
         <div class="services" id="our-services">
             <div class="wrapper">
