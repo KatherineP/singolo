@@ -158,7 +158,7 @@
     position: absolute;
     top: 15%;
     bottom: 0;
-    width: 34%;
+    width: 17%;
     cursor: pointer;
 }
 
@@ -232,7 +232,7 @@
     cursor: pointer;
 }
 
-#iphone-horizontal-black {
+#iphone-horizontal-black{
     position: absolute;
     top: 188px;
     left: 485px;
