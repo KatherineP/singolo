@@ -92,50 +92,172 @@
 .navbar ul li a:not(.active):hover {
     color: #f06c64;
 }
-
+                        /* SLIDER */
 .slider {
     background: linear-gradient(180deg, #ef6c64 99%, #ea676b 1%);
+    /* position: absolute; */
+    height: 650px;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
 }
 
-.slider-layout {
-    justify-content: space-around;
+.slider2 {
+    background: linear-gradient(180deg, #648bf0 99%, #587ad0 1%);
+    /* height: 700px; */
+    /* top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center; */
+}
+
+
+
+
+.item-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    animation: 0.5s ease-in-out;
+}
+
+.active-item,
+.next {
+    display: block;
+
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.slider-description {
     display: flex;
+    /* margin: 30px 20%; */
+    /* justify-content: space-between; */
+
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     padding-top: 52px;
     padding-bottom: 62px;
 }
-
-#leftArrow {
-    width: 27px;
-    height: 27px;
-    padding-left: 1px;
+                            
+.control {
+    position: absolute;
+    top: 15%;
+    bottom: 0;
+    width: 34%;
+    cursor: pointer;
 }
 
-#leftArrow:hover {
+/* .control.left {
+    left: 0;
+    right: auto;
+} */
+
+.control.right {
+    /* left: auto; */
+    right: 0;
+}
+                            
+.arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow:hover {
     opacity: .5;
+}
+
+.arrow.right {
+    right: 50%;
+}
+
+.to-left {
+    animation-name: left;
+
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+    
 }
 
 #verticalImage {
     width: 240px;
     height: 483px;
-    margin-left: -22px;
+    margin-left: 75px;
+    cursor: pointer;
 }
 
 #horizontalImage {
     width: 483px;
     height: 240px;
-    margin-right: -24px;
+    margin-right: 75px;
+    cursor: pointer;
+
 }
 
-#rightArrow {
-    width: 27px;
-    height: 27px;
+#iphone-vertical-black {
+    position: absolute;
+    top: 117px;
+    left: 126px;
+    width: 188px;
+    height: 334px;
+    background-color: #000000;
+    cursor: pointer;
 }
 
-#rightArrow:hover{
-    opacity: .5;
+#iphone-horizontal-black {
+    position: absolute;
+    top: 188px;
+    left: 485px;
+    width: 333px;
+    height: 189px;
+    background-color: #000000;
+    cursor: pointer;
+}
+                            
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
 }
 
 .services {
