@@ -4,10 +4,22 @@ const CLOSE_BUTTON = document.getElementById('close-btn');
 const FORM = document.getElementById('form');
 const PORTFOLIO_IMAGES = document.getElementById('portfolio-images');
 const PORTFOLIO_TAGS = document.getElementById('portfolio-tags');
-const CLICKABLE_PHONES = document.querySelectorAll('.clickable-phone');
+//const CLICKABLE_PHONES = document.querySelectorAll('.clickable-phone');
+const VERTICAL_IMAGE = document.getElementById('verticalImage');
+const HORIZONTAL_IMAGE = document.getElementById('horizontalImage');
 let slider = document.getElementById('home');
 let portfolioImages = PORTFOLIO_IMAGES.querySelectorAll('img');
 let portfolioImagesPosition = PORTFOLIO_IMAGES.querySelectorAll('div');
+
+VERTICAL_IMAGE.addEventListener('click', event => {
+    const screen =   document.querySelector('.vertical').querySelector('.black-screen');
+    screen.hidden = !screen.hidden;
+});
+
+HORIZONTAL_IMAGE.addEventListener('click', event => {
+    const screen =   document.querySelector('.horizontal').querySelector('.black-screen');
+    screen.hidden = !screen.hidden;
+});
 
 
 //SLIDER
@@ -71,16 +83,6 @@ document.querySelector('.control.right').addEventListener('click', function() {
     }
     else { slider.classList.add('slider2'); }
 });
-let hiddenValue = VERTICAL_PHONE_BLACK.hidden;
-    console.log(hiddenValue);
-
-//PHONES
-CLICKABLE_PHONES.forEach(phone => {
-    phone.addEventListener('click', event => {
-      const screen = phone.parent.querySelector('.black-screen');
-      screen.hidden = !screen.hidden;
-    })
-  });
 
 //HEADER MENU
 MENU.addEventListener('click', (event) => {
