@@ -43,6 +43,60 @@
     justify-content: space-between;
 }
 
+
+
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin: 35px 0 0 48px;
+    display: none;
+    transition: all 0.7s ease-in-out;
+}
+
+.hamburger-active {
+    transform: rotate(90deg);
+    transition: all 0.7s ease-in-out;
+}
+
+.hamburger__line {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+    content: "";
+    top: calc (50% - 1.5px);
+    left: 0;
+}
+
+.hamburger__line::after {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+    content: "";
+    top: 16px;
+    left: 0;
+}
+
+.hamburger__line::before {
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+    content: "";
+    top: 8px;
+    left: 0;
+}
+
 .singolo-logo {
     color: white;
     width: 114px;
@@ -59,6 +113,31 @@
     color: #f06c64;
 }
 
+@media (max-width: 768px){
+    .hamburger {
+        position: relative;
+        display: inline-block;
+        width: 25px;
+        height: 20px;
+        margin: 35px 0 0 48px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .header-elements {
+        justify-content: flex-start;
+        margin-left: -22px;
+    }
+
+    .singolo-logo {
+        margin-left: 33vw;
+    }
+}
+
+
+
 .navbar ul {
     display: flex;
     width: 370px;
@@ -71,6 +150,12 @@
     text-transform: uppercase;
     margin-top: 46px;
 }
+
+/* .menu-icon {
+    width: 25px;
+    height: 20px;
+    background-color: white;
+} */
 
 .navbar ul li a {
     color: white;
