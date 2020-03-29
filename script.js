@@ -11,6 +11,12 @@ let slider = document.getElementById('home');
 let portfolioImages = PORTFOLIO_IMAGES.querySelectorAll('img');
 let portfolioImagesPosition = PORTFOLIO_IMAGES.querySelectorAll('div');
 
+//HAMBERGER BUTTON
+document.querySelector('.hamburger').onclick = function() {
+    this.classList.toggle('hamburger-active');
+}
+
+//PHONE IMAGES
 VERTICAL_IMAGE.addEventListener('click', event => {
     const screen =   document.querySelector('.vertical').querySelector('.black-screen');
     screen.hidden = !screen.hidden;
